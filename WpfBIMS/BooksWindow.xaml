@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfBIMS.BooksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBIMS"
+        mc:Ignorable="d"
+        Title="Books" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="268" Margin="10,10,0,0" VerticalAlignment="Top" Width="210" Source="/WpfBIMS;component/images/logo.png"/>
+        <Button x:Name="BtnHome" Content="Home" HorizontalAlignment="Left" Margin="225,79,0,0" VerticalAlignment="Top" Width="75" Click="BtnHome_Click"/>
+        <TextBox x:Name="txtBxTitle" HorizontalAlignment="Left" Height="23" Margin="353,171,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txtBxFirstName" HorizontalAlignment="Left" Height="23" Margin="353,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBox x:Name="txtBxLastName" HorizontalAlignment="Left" Height="23" Margin="353,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="236,178,0,0" TextWrapping="Wrap" Text="Book Title:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="236,232,0,0" TextWrapping="Wrap" Text="Author First Name:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="238,286,0,0" TextWrapping="Wrap" Text="Author Last Name:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txtBxGenre" HorizontalAlignment="Left" Height="23" Margin="353,334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="225,128,0,0" TextWrapping="Wrap" Text="Please enter your book information below:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="236,341,0,0" TextWrapping="Wrap" Text="Book Genre:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="BtnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="353,385,0,0" VerticalAlignment="Top" Width="75" Click="BtnSubmit_Click"/>
+        <Button x:Name="BtnClear" Content="Clear" HorizontalAlignment="Left" Margin="477,385,0,0" VerticalAlignment="Top" Width="75" Click="BtnClear_Click"/>
+        <Button x:Name="BtnSignOut" Content="Sign Out" HorizontalAlignment="Left" Margin="666,36,0,0" VerticalAlignment="Top" Width="75" Click="BtnSignOut_Click"/>
+
+    </Grid>
+</Window>
